@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <form>
+                <div class="display">
+                    <input type="text" name="display" value="0" disabled>
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="clearDisplay()">
+                    <input type="button" value="+/-" onclick="toggleSign()">
+                    <input type="button" value="%" onclick="displayPercentage('%')">
+                    <input type="button" value="/" onclick="displayOperator('/')">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="displayNumber(7)">
+                    <input type="button" value="8" onclick="displayNumber(8)">
+                    <input type="button" value="9" onclick="displayNumber(9)">
+                    <input type="button" value="*" onclick="displayOperator('*')">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="displayNumber(4)">
+                    <input type="button" value="5" onclick="displayNumber(5)">
+                    <input type="button" value="6" onclick="displayNumber(6)">
+                    <input type="button" value="-" onclick="displayOperator('-')">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="displayNumber(1)">
+                    <input type="button" value="2" onclick="displayNumber(2)">
+                    <input type="button" value="3" onclick="displayNumber(3)">
+                    <input type="button" value="+" onclick="displayOperator('+')">
+                </div>
+                <div>
+                    <input type="button" value="0" onclick="displayNumber(0)" class="zero">
+                    <input type="button" value="." onclick="displayDecimal()">
+                    <input type="button" value="=" onclick="displayResult()">
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
+<script src="script.js">
+
+</script>
